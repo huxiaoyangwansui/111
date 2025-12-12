@@ -33,7 +33,7 @@ jobs:
       # 注意：将`main.py`替换为你的Python脚本文件名
       - name: Build EXE with PyInstaller
         run: |
-          pyinstaller --onefile --add-data "windows.png;." main.py
+          pyinstaller --onefile --add-data "windows.png;." --windowed main.py
 
       # 5. 上传打包后的EXE作为构建产物（便于下载）
       - name: Upload EXE artifact
